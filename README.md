@@ -47,11 +47,11 @@ The app fetches data from:
 
 ## GitHub Pages Deployment
 
-The Vite base path is configured as `/web-graffiti/` in `vite.config.ts`.
+The Vite base path is configured as `/Web-Graffiti/` in `vite.config.ts`.
 
 One simple deployment path:
 
-1. Push the repository to GitHub as `web-graffiti`.
+1. Push the repository to GitHub as `Web-Graffiti`.
 2. In GitHub, open repository Settings.
 3. Go to Pages.
 4. Set the build source to GitHub Actions.

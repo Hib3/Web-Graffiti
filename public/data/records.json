@@ -1,7 +1,7 @@
 [
   {
     "id": "wg-000003",
-    "thumbnailUrl": "/web-graffiti/thumbnails/sample-001.jpg",
+    "thumbnailUrl": "/Web-Graffiti/thumbnails/sample-001.jpg",
     "hackerName": "ExampleHacker",
     "hackedUrlDisplay": "example.jp/...",
     "hackedUrlHash": "sha256:replace-with-real-hash-003",
@@ -18,7 +18,7 @@
   },
   {
     "id": "wg-000002",
-    "thumbnailUrl": "/web-graffiti/thumbnails/sample-001.jpg",
+    "thumbnailUrl": "/Web-Graffiti/thumbnails/sample-001.jpg",
     "hackerName": "ArchiveSample",
     "hackedUrlDisplay": "example.org/...",
     "hackedUrlHash": "sha256:replace-with-real-hash-002",
@@ -35,7 +35,7 @@
   },
   {
     "id": "wg-000001",
-    "thumbnailUrl": "/web-graffiti/thumbnails/sample-001.jpg",
+    "thumbnailUrl": "/Web-Graffiti/thumbnails/sample-001.jpg",
     "hackerName": "StaticOnly",
     "hackedUrlDisplay": "example.net/...",
     "hackedUrlHash": "sha256:replace-with-real-hash-001",

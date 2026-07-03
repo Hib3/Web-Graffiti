@@ -5,7 +5,7 @@ Records are stored in `public/data/records.json` and loaded by the static app at
 ```json
 {
   "id": "wg-000001",
-  "thumbnailUrl": "/web-graffiti/thumbnails/sample-001.jpg",
+  "thumbnailUrl": "/Web-Graffiti/thumbnails/sample-001.jpg",
   "hackerName": "ExampleHacker",
   "hackedUrlDisplay": "example.jp/...",
   "hackedUrlHash": "sha256:replace-with-real-hash",

@@ -49,12 +49,11 @@ The app fetches data from:
 
 The Vite base path is configured as `/Web-Graffiti/` in `vite.config.ts`.
 
-One simple deployment path:
+This repository can be deployed by publishing the built `dist` directory to a `gh-pages` branch.
 
-1. Push the repository to GitHub as `Web-Graffiti`.
-2. In GitHub, open repository Settings.
-3. Go to Pages.
-4. Set the build source to GitHub Actions.
-5. Add a Pages workflow that runs `npm ci`, `npm run build`, and uploads `dist`.
+1. Push the source branch to GitHub as `main`.
+2. Run `npm run build`.
+3. Publish `dist` to the `gh-pages` branch.
+4. In GitHub Pages settings, set the source to `gh-pages` and `/`.
 
 No Cloudflare Worker or backend is required for the MVP.

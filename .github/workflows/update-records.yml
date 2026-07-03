@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   update-records:
@@ -62,19 +64,14 @@ jobs:
           git commit -m "Update defacement records"
           git push
 
-      - name: Deploy GitHub Pages branch
-        run: |
-          deploy_dir="$(mktemp -d)"
-          git clone --branch gh-pages --single-branch "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$deploy_dir"
-          find "$deploy_dir" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-          cp -a dist/. "$deploy_dir/"
-          touch "$deploy_dir/.nojekyll"
-          git -C "$deploy_dir" config user.name "github-actions[bot]"
-          git -C "$deploy_dir" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C "$deploy_dir" add .
-          if git -C "$deploy_dir" diff --cached --quiet; then
-            echo "No Pages changes."
-            exit 0
-          fi
-          git -C "$deploy_dir" commit -m "Deploy updated records"
-          git -C "$deploy_dir" push
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

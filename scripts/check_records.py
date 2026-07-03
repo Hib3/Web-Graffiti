@@ -9,6 +9,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 RECORDS_PATH = ROOT / "public" / "data" / "records.json"
+STATUS_PATH = ROOT / "public" / "data" / "source-status.json"
 REQUIRED_KEYS = {
     "id",
     "source",
@@ -39,9 +40,43 @@ def parse_iso(value: Any, nullable: bool = False) -> bool:
 
 def main() -> int:
     records = json.loads(RECORDS_PATH.read_text(encoding="utf-8"))
+    status = json.loads(STATUS_PATH.read_text(encoding="utf-8"))
     if not isinstance(records, list) or not records:
         print("records.json must be a non-empty array", file=sys.stderr)
         return 1
+    if not isinstance(status, dict):
+        print("source-status.json must be an object", file=sys.stderr)
+        return 1
+    if status.get("totalRecords") != len(records):
+        print("source-status.json totalRecords does not match records.json", file=sys.stderr)
+        return 1
+    if status.get("successfulSources", 0) < 1:
+        print("at least one source must produce records", file=sys.stderr)
+        return 1
+    sources = status.get("sources")
+    if not isinstance(sources, list) or not sources:
+        print("source-status.json must include source statuses", file=sys.stderr)
+        return 1
+    for index, source in enumerate(sources):
+        if not isinstance(source, dict):
+            print(f"source status {index} must be an object", file=sys.stderr)
+            return 1
+        for key in ["source", "ok", "recordCount", "fetchedAt"]:
+            if key not in source:
+                print(f"source status {index} missing {key}", file=sys.stderr)
+                return 1
+        if not isinstance(source["source"], str) or not source["source"].strip():
+            print(f"source status {index} invalid source", file=sys.stderr)
+            return 1
+        if not isinstance(source["ok"], bool):
+            print(f"source status {index} invalid ok", file=sys.stderr)
+            return 1
+        if not isinstance(source["recordCount"], int):
+            print(f"source status {index} invalid recordCount", file=sys.stderr)
+            return 1
+        if not parse_iso(source["fetchedAt"]):
+            print(f"source status {index} invalid fetchedAt", file=sys.stderr)
+            return 1
 
     seen_ids: set[str] = set()
     for index, record in enumerate(records):

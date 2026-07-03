@@ -42,6 +42,8 @@ jobs:
           DEFACERNET_MAX_PAGES: "1"
           DEFACERNET_DELAY_SECONDS: "2"
           WEB_GRAFFITI_RECORD_LIMIT: "100"
+          WEB_GRAFFITI_MIN_RECORDS: "20"
+          WEB_GRAFFITI_MIN_SUCCESSFUL_SOURCES: "1"
         run: python scripts/generate_records.py
 
       - name: Check records
@@ -54,13 +56,13 @@ jobs:
 
       - name: Commit updated records
         run: |
-          if git diff --quiet -- public/data/records.json; then
+          if git diff --quiet -- public/data/records.json public/data/source-status.json; then
             echo "No record changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/records.json
+          git add public/data/records.json public/data/source-status.json
           git commit -m "Update defacement records"
           git push
 

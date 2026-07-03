@@ -8,9 +8,22 @@ import { getCountries } from "./utils/filter";
 import { sortByReportedAtDesc } from "./utils/sort";
 
 type LoadState = "idle" | "loading" | "ready" | "error";
+type SourceStatus = {
+  generatedAt: string;
+  totalRecords: number;
+  successfulSources: number;
+  sources: Array<{
+    source: string;
+    ok: boolean;
+    recordCount: number;
+    error: string | null;
+    fetchedAt: string;
+  }>;
+};
 
 function App() {
   const [records, setRecords] = useState<DefacementRecord[]>([]);
+  const [sourceStatus, setSourceStatus] = useState<SourceStatus | null>(null);
   const [loadState, setLoadState] = useState<LoadState>("idle");
   const [error, setError] = useState("");
   const [query, setQuery] = useState("");
@@ -25,17 +38,26 @@ function App() {
       setError("");
 
       try {
-        const response = await fetch(
-          `${import.meta.env.BASE_URL}data/records.json`,
-          { signal: controller.signal },
-        );
+        const [response, statusResponse] = await Promise.all([
+          fetch(`${import.meta.env.BASE_URL}data/records.json`, {
+            signal: controller.signal,
+          }),
+          fetch(`${import.meta.env.BASE_URL}data/source-status.json`, {
+            signal: controller.signal,
+          }),
+        ]);
 
         if (!response.ok) {
           throw new Error(`Failed to load records: ${response.status}`);
         }
+        if (!statusResponse.ok) {
+          throw new Error(`Failed to load source status: ${statusResponse.status}`);
+        }
 
         const data = (await response.json()) as DefacementRecord[];
+        const status = (await statusResponse.json()) as SourceStatus;
         setRecords(sortByReportedAtDesc(data));
+        setSourceStatus(status);
         setLoadState("ready");
       } catch (err) {
         if (controller.signal.aborted) {
@@ -82,6 +104,18 @@ function App() {
           onMirrorAccessibleOnlyChange={setMirrorAccessibleOnly}
         />
       </section>
+
+      {sourceStatus && (
+        <section className="source-status" aria-label="Source status">
+          <strong>{sourceStatus.totalRecords} records</strong>
+          <span>{sourceStatus.successfulSources} active sources</span>
+          {sourceStatus.sources.map((source) => (
+            <span key={source.source} className={source.ok ? "ok" : "warn"}>
+              {source.source}: {source.ok ? source.recordCount : "unavailable"}
+            </span>
+          ))}
+        </section>
+      )}
 
       {loadState === "loading" && (
         <section className="status-state" aria-live="polite">

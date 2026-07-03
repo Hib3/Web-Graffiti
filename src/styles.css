@@ -87,6 +87,32 @@ select {
   flex-wrap: wrap;
 }
 
+.source-status {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 0 0 18px;
+  color: #47524b;
+  font-size: 0.86rem;
+}
+
+.source-status span,
+.source-status strong {
+  border: 1px solid #d0c8b5;
+  border-radius: 999px;
+  background: #fffdf8;
+  padding: 5px 9px;
+}
+
+.source-status .ok {
+  color: #1f6f50;
+}
+
+.source-status .warn {
+  color: #8c2f2f;
+}
+
 .checkbox-filter {
   display: inline-flex;
   align-items: center;

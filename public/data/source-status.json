@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-07-03T16:34:18+00:00",
+  "totalRecords": 70,
+  "successfulSources": 2,
+  "sources": [
+    {
+      "source": "OwnzYou",
+      "ok": true,
+      "recordCount": 40,
+      "error": null,
+      "fetchedAt": "2026-07-03T16:34:18+00:00"
+    },
+    {
+      "source": "Zone-Xsec",
+      "ok": false,
+      "recordCount": 0,
+      "error": "Zone-Xsec: anti-bot challenge encountered",
+      "fetchedAt": "2026-07-03T16:34:18+00:00"
+    },
+    {
+      "source": "Zone-H",
+      "ok": false,
+      "recordCount": 0,
+      "error": "Zone-H: JavaScript challenge encountered",
+      "fetchedAt": "2026-07-03T16:34:18+00:00"
+    },
+    {
+      "source": "Defacer.Net",
+      "ok": true,
+      "recordCount": 30,
+      "error": null,
+      "fetchedAt": "2026-07-03T16:34:18+00:00"
+    }
+  ]
+}

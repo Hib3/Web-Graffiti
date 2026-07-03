@@ -11,7 +11,7 @@ export function SearchBar({ value, onChange }: SearchBarProps) {
         type="search"
         value={value}
         onChange={(event) => onChange(event.target.value)}
-        placeholder="Hacker, masked URL, country, or tag"
+        placeholder="Hacker team, masked URL, country, or tag"
         aria-label="Search records"
       />
     </label>

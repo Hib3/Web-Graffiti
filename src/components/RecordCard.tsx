@@ -8,15 +8,15 @@ type RecordCardProps = {
 export function RecordCard({ record }: RecordCardProps) {
   return (
     <article className="record-card">
-      <div className="thumb-frame" aria-label="Record thumbnail">
+      <div className="thumb-frame" aria-label="Mirror thumbnail">
         {record.thumbnailUrl ? (
           <img
-            src={record.thumbnailUrl}
-            alt={`Thumbnail for ${record.hackerName}`}
+            src={`${import.meta.env.BASE_URL}${record.thumbnailUrl.replace(/^\//, "")}`}
+            alt={`Mirror thumbnail for ${record.hackerName}`}
             loading="lazy"
           />
         ) : (
-          <div className="thumb-placeholder">No thumbnail</div>
+          <div className="thumb-placeholder">Thumbnail required</div>
         )}
       </div>
 
@@ -28,7 +28,9 @@ export function RecordCard({ record }: RecordCardProps) {
           </span>
         </div>
 
-        <p className="masked-url">{record.hackedUrlDisplay}</p>
+        <p className="masked-url" title="Masked victim URL, not clickable">
+          {record.hackedUrlDisplay}
+        </p>
 
         <dl className="record-meta">
           <div>
@@ -59,11 +61,11 @@ export function RecordCard({ record }: RecordCardProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Open mirror
+              View mirror
             </a>
           ) : (
             <button className="mirror-button" type="button" disabled>
-              Open mirror
+              Mirror unavailable
             </button>
           )}
         </div>

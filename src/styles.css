@@ -110,7 +110,7 @@ select {
 
 .record-card {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: minmax(260px, 34%) 1fr;
   gap: 18px;
   padding: 14px;
   border: 1px solid #d8d0bd;
@@ -120,7 +120,7 @@ select {
 }
 
 .thumb-frame {
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border: 1px solid #c9c1ad;
   border-radius: 6px;
@@ -160,7 +160,7 @@ select {
 .record-topline h2 {
   margin: 0;
   color: #111712;
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   line-height: 1.2;
   overflow-wrap: anywhere;
 }
@@ -232,12 +232,12 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 40px;
+  min-height: 48px;
   border: 1px solid #174c38;
   border-radius: 8px;
   background: #1f6f50;
   color: #ffffff;
-  padding: 0 14px;
+  padding: 0 18px;
   font-weight: 800;
   text-decoration: none;
 }

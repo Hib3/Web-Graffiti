@@ -68,7 +68,7 @@ function App() {
       <header className="site-header">
         <div>
           <h1>Web Graffiti</h1>
-          <p>Public web defacement traces, sorted by newest first.</p>
+          <p>Mirror-first archive for recognizing web defacement activity.</p>
         </div>
       </header>
 

@@ -5,7 +5,7 @@ Records are stored in `public/data/records.json` and loaded by the static app at
 ```json
 {
   "id": "wg-000001",
-  "thumbnailUrl": "/Web-Graffiti/thumbnails/sample-001.jpg",
+  "thumbnailUrl": "thumbnails/mirror-001.svg",
   "hackerName": "ExampleHacker",
   "hackedUrlDisplay": "example.jp/...",
   "hackedUrlHash": "sha256:replace-with-real-hash",
@@ -25,7 +25,7 @@ Records are stored in `public/data/records.json` and loaded by the static app at
 ## Fields
 
 - `id`: Stable record ID.
-- `thumbnailUrl`: Public thumbnail path. If omitted, the UI shows a placeholder.
+- `thumbnailUrl`: Public thumbnail path under the deployed app base. This should be present for each real record.
 - `hackerName`: Display name from the source record.
 - `hackedUrlDisplay`: Masked, display-safe victim URL string. This must never be clickable.
 - `hackedUrlHash`: Hash for deduplication without exposing the original victim URL.

@@ -24,18 +24,19 @@ export function RecordCard({ record }: RecordCardProps) {
         <div className="record-topline">
           <h2>{record.hackerName}</h2>
           <span className="country">
-            {record.country} ({record.countryCode})
+            {record.country ?? "Unknown"}
+            {record.countryCode ? ` (${record.countryCode})` : ""}
           </span>
         </div>
 
         <p className="masked-url" title="Masked victim URL, not clickable">
-          {record.hackedUrlDisplay}
+          {record.hackedUrl}
         </p>
 
         <dl className="record-meta">
           <div>
             <dt>Reported</dt>
-            <dd>{formatLocalDate(record.reportedAt)}</dd>
+            <dd>{record.reportedAt ? formatLocalDate(record.reportedAt) : "Unknown"}</dd>
           </div>
           <div>
             <dt>Source</dt>
@@ -48,10 +49,8 @@ export function RecordCard({ record }: RecordCardProps) {
         </dl>
 
         <div className="record-footer">
-          <div className="tags" aria-label="Tags">
-            {record.tags.map((tag) => (
-              <span key={tag}>{tag}</span>
-            ))}
+          <div className="source-note" aria-label="Source">
+            {record.source} / fetched {formatLocalDate(record.fetchedAt)}
           </div>
 
           {record.mirrorAccessible ? (
@@ -61,7 +60,7 @@ export function RecordCard({ record }: RecordCardProps) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View mirror
+              Open mirror
             </a>
           ) : (
             <button className="mirror-button" type="button" disabled>

@@ -3,3 +3,5 @@ dist
 .vite
 *.local
 vite-dev.*.log
+__pycache__
+*.pyc

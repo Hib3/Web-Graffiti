@@ -4,12 +4,13 @@ Web Graffiti is a static GitHub Pages app for recognizing web defacement activit
 
 ## Features
 
-- Responsive record cards with required mirror thumbnails.
+- Responsive record cards with mirror thumbnails or a clear placeholder.
 - Newest-first sorting by `reportedAt`.
-- Search across hacker name, masked hacked URL display, country, and tags.
+- Search across hacker name, masked hacked URL, country, and source.
 - Filters for country and accessible mirrors.
 - Mirror-only external links for checking archived defacement pages.
 - Loading, empty, and error states.
+- Python data acquisition from public defacement mirror archives.
 
 ## Safety Boundaries
 
@@ -39,7 +40,15 @@ npm run preview
 
 Records live in `public/data/records.json`. See `docs/data-schema.md`.
 
-Each record should have a local thumbnail under `public/thumbnails/`. The app is mirror-first: the only outbound user action is opening `mirrorUrl`.
+Each record can have a local thumbnail under `public/thumbnails/`. If it is missing, the app shows a placeholder. The app is mirror-first: the only outbound user action is opening `mirrorUrl`.
+
+Generate records from public archive sources:
+
+```bash
+python scripts/generate_records.py
+```
+
+The current MVP source is OwnzYou. The fetcher uses a conservative user-agent, defaults to one archive page, masks victim paths for display, and keeps the previous `records.json` if parsing fails.
 
 The app fetches data from:
 

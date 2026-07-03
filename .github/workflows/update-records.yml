@@ -1,0 +1,80 @@
+name: Update Records
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-records:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: python -m pip install requests beautifulsoup4 lxml python-dateutil
+
+      - name: Generate records
+        env:
+          OWNZYOU_MAX_PAGES: "2"
+          OWNZYOU_DELAY_SECONDS: "2"
+          ZONEXSEC_MAX_PAGES: "1"
+          ZONEXSEC_DELAY_SECONDS: "2"
+          ZONEH_MAX_PAGES: "1"
+          ZONEH_DELAY_SECONDS: "2"
+          DEFACERNET_MAX_PAGES: "1"
+          DEFACERNET_DELAY_SECONDS: "2"
+          WEB_GRAFFITI_RECORD_LIMIT: "100"
+        run: python scripts/generate_records.py
+
+      - name: Check records
+        run: python scripts/check_records.py
+
+      - name: Build frontend
+        run: |
+          npm ci
+          npm run build
+
+      - name: Commit updated records
+        run: |
+          if git diff --quiet -- public/data/records.json; then
+            echo "No record changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/records.json
+          git commit -m "Update defacement records"
+          git push
+
+      - name: Deploy GitHub Pages branch
+        run: |
+          deploy_dir="$(mktemp -d)"
+          git clone --branch gh-pages --single-branch "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$deploy_dir"
+          find "$deploy_dir" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -a dist/. "$deploy_dir/"
+          touch "$deploy_dir/.nojekyll"
+          git -C "$deploy_dir" config user.name "github-actions[bot]"
+          git -C "$deploy_dir" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$deploy_dir" add .
+          if git -C "$deploy_dir" diff --cached --quiet; then
+            echo "No Pages changes."
+            exit 0
+          fi
+          git -C "$deploy_dir" commit -m "Deploy updated records"
+          git -C "$deploy_dir" push

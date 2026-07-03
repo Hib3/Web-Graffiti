@@ -1,17 +1,14 @@
 export type DefacementRecord = {
   id: string;
-  thumbnailUrl?: string;
+  source: string;
+  sourceUrl: string;
+  thumbnailUrl: string | null;
   hackerName: string;
-  hackedUrlDisplay: string;
-  hackedUrlHash: string;
-  country: string;
-  countryCode: string;
+  hackedUrl: string;
+  country: string | null;
+  countryCode: string | null;
   mirrorUrl: string;
   mirrorAccessible: boolean;
-  source: string;
-  sourceUrl?: string;
-  reportedAt: string;
+  reportedAt: string | null;
   fetchedAt: string;
-  tags: string[];
-  safetyFlags: string[];
 };

@@ -27,9 +27,9 @@ export function filterRecords(
 
     const searchable = [
       record.hackerName,
-      record.hackedUrlDisplay,
-      record.country,
-      ...record.tags,
+      record.hackedUrl,
+      record.country ?? "",
+      record.source,
     ]
       .join(" ")
       .toLowerCase();
@@ -39,7 +39,7 @@ export function filterRecords(
 }
 
 export function getCountries(records: DefacementRecord[]) {
-  return Array.from(new Set(records.map((record) => record.country))).sort(
-    (a, b) => a.localeCompare(b),
-  );
+  return Array.from(
+    new Set(records.map((record) => record.country).filter(Boolean) as string[]),
+  ).sort((a, b) => a.localeCompare(b));
 }

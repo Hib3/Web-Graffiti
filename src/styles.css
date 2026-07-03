@@ -211,19 +211,15 @@ select {
   align-items: end;
 }
 
-.tags {
+.source-note {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
 
-.tags span {
-  border: 1px solid #d0c8b5;
-  border-radius: 999px;
-  padding: 4px 8px;
-  color: #47524b;
-  background: #f6f0e3;
-  font-size: 0.76rem;
+.source-note {
+  color: #6c746d;
+  font-size: 0.78rem;
   font-weight: 700;
 }
 

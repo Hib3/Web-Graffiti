@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-13T06:29:02+00:00",
+  "generatedAt": "2026-07-14T05:39:25+00:00",
   "totalRecords": 70,
   "successfulSources": 2,
   "sources": [
@@ -8,28 +8,28 @@
       "ok": true,
       "recordCount": 40,
       "error": null,
-      "fetchedAt": "2026-07-13T06:29:02+00:00"
+      "fetchedAt": "2026-07-14T05:39:25+00:00"
     },
     {
       "source": "Zone-Xsec",
       "ok": false,
       "recordCount": 0,
       "error": "403 Client Error: Forbidden for url: https://zone-xsec.com/archive",
-      "fetchedAt": "2026-07-13T06:29:02+00:00"
+      "fetchedAt": "2026-07-14T05:39:25+00:00"
     },
     {
       "source": "Zone-H",
       "ok": false,
       "recordCount": 0,
       "error": "Zone-H: JavaScript challenge encountered",
-      "fetchedAt": "2026-07-13T06:29:02+00:00"
+      "fetchedAt": "2026-07-14T05:39:25+00:00"
     },
     {
       "source": "Defacer.Net",
       "ok": true,
       "recordCount": 30,
       "error": null,
-      "fetchedAt": "2026-07-13T06:29:02+00:00"
+      "fetchedAt": "2026-07-14T05:39:25+00:00"
     }
   ]
 }

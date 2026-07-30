@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-07-29T06:06:36+00:00",
-  "totalRecords": 30,
-  "successfulSources": 1,
+  "generatedAt": "2026-07-30T05:51:55+00:00",
+  "totalRecords": 70,
+  "successfulSources": 2,
   "sources": [
     {
       "source": "OwnzYou",
-      "ok": false,
-      "recordCount": 0,
-      "error": "521 Server Error: <none> for url: https://ownzyou.com/archive",
-      "fetchedAt": "2026-07-29T06:06:36+00:00"
+      "ok": true,
+      "recordCount": 40,
+      "error": null,
+      "fetchedAt": "2026-07-30T05:51:55+00:00"
     },
     {
       "source": "Zone-Xsec",
       "ok": false,
       "recordCount": 0,
       "error": "403 Client Error: Forbidden for url: https://zone-xsec.com/archive",
-      "fetchedAt": "2026-07-29T06:06:36+00:00"
+      "fetchedAt": "2026-07-30T05:51:55+00:00"
     },
     {
       "source": "Zone-H",
       "ok": false,
       "recordCount": 0,
       "error": "Zone-H: JavaScript challenge encountered",
-      "fetchedAt": "2026-07-29T06:06:36+00:00"
+      "fetchedAt": "2026-07-30T05:51:55+00:00"
     },
     {
       "source": "Defacer.Net",
       "ok": true,
       "recordCount": 30,
       "error": null,
-      "fetchedAt": "2026-07-29T06:06:36+00:00"
+      "fetchedAt": "2026-07-30T05:51:55+00:00"
     }
   ]
 }

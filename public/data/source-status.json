@@ -1,35 +1,35 @@
 {
-  "generatedAt": "2026-08-14T04:59:48+00:00",
-  "totalRecords": 70,
-  "successfulSources": 2,
+  "generatedAt": "2026-08-15T03:52:45+00:00",
+  "totalRecords": 40,
+  "successfulSources": 1,
   "sources": [
     {
       "source": "OwnzYou",
       "ok": true,
       "recordCount": 40,
       "error": null,
-      "fetchedAt": "2026-08-14T04:59:48+00:00"
+      "fetchedAt": "2026-08-15T03:52:45+00:00"
     },
     {
       "source": "Zone-Xsec",
       "ok": false,
       "recordCount": 0,
       "error": "403 Client Error: Forbidden for url: https://zone-xsec.com/archive",
-      "fetchedAt": "2026-08-14T04:59:48+00:00"
+      "fetchedAt": "2026-08-15T03:52:45+00:00"
     },
     {
       "source": "Zone-H",
       "ok": false,
       "recordCount": 0,
       "error": "Zone-H: JavaScript challenge encountered",
-      "fetchedAt": "2026-08-14T04:59:48+00:00"
+      "fetchedAt": "2026-08-15T03:52:45+00:00"
     },
     {
       "source": "Defacer.Net",
-      "ok": true,
-      "recordCount": 30,
-      "error": null,
-      "fetchedAt": "2026-08-14T04:59:48+00:00"
+      "ok": false,
+      "recordCount": 0,
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+      "fetchedAt": "2026-08-15T03:52:45+00:00"
     }
   ]
 }

@@ -1,5 +1,565 @@
 [
   {
+    "id": "wg-e3c685874aec",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "yourtempwebsite.co.za/...",
+    "country": "ZA",
+    "countryCode": "ZA",
+    "mirrorUrl": "https://ownzyou.com/zone/293630",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-05T19:41:23+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-ab8e02031a89",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "pegasusmarketing.com.pk/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293629",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-05T19:39:53+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-ff46f6859613",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "test",
+    "hackedUrl": "www.steinbrill.com/...",
+    "country": "RS",
+    "countryCode": "RS",
+    "mirrorUrl": "https://ownzyou.com/zone/293627",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-05T10:01:55+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-bb98b26dac26",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "rent-kw.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293626",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-05T06:25:03+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-a8e3dd8cadf1",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "TurkHackTeam",
+    "hackedUrl": "ahblackstone.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293625",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-05T04:06:44+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-f4e4263a00a2",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "TurkHackTeam",
+    "hackedUrl": "dev.launchpadonline.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293624",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-05T03:45:43+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-13eed8982983",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "new.avayesabzaram.ir/...",
+    "country": "IR",
+    "countryCode": "IR",
+    "mirrorUrl": "https://ownzyou.com/zone/293623",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-05T00:27:03+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-fa5874ecf195",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "avayesabzaram.ir/...",
+    "country": "IR",
+    "countryCode": "IR",
+    "mirrorUrl": "https://ownzyou.com/zone/293622",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-05T00:27:01+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-9921ff654d16",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "TurkHackTeam",
+    "hackedUrl": "rcr3d.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293619",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-04T12:23:47+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-ad20561a6811",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "TurkHackTeam",
+    "hackedUrl": "aspuser.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293618",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-04T12:23:46+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-f4ef2d17b7ea",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "TurkHackTeam",
+    "hackedUrl": "otvinta.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293617",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-04T12:23:45+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-dd0c0f410423",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "TurkHackTeam",
+    "hackedUrl": "aspemail.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293616",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-04T12:23:44+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-73eeddd5c096",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "TurkHackTeam",
+    "hackedUrl": "persits.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293615",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-04T12:23:43+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-9439c02a915a",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "TurkHackTeam",
+    "hackedUrl": "aspupload.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293614",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-04T12:23:42+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-fa9992be4392",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "smartlabourtraining.co.za/...",
+    "country": "ZA",
+    "countryCode": "ZA",
+    "mirrorUrl": "https://ownzyou.com/zone/293613",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-03T22:01:48+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-e7336d91cc51",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "wellpay.co.za/...",
+    "country": "ZA",
+    "countryCode": "ZA",
+    "mirrorUrl": "https://ownzyou.com/zone/293612",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-03T22:01:43+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-0fdfbbf40b6a",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "sheshawage.co.za/...",
+    "country": "ZA",
+    "countryCode": "ZA",
+    "mirrorUrl": "https://ownzyou.com/zone/293611",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-03T22:01:40+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-8947d33df302",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "payanyday.co.za/...",
+    "country": "ZA",
+    "countryCode": "ZA",
+    "mirrorUrl": "https://ownzyou.com/zone/293610",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-03T22:01:37+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-dd3baf40ef1e",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "circupay.co.za/...",
+    "country": "ZA",
+    "countryCode": "ZA",
+    "mirrorUrl": "https://ownzyou.com/zone/293609",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-03T22:01:34+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-365e6d50df78",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "aurorapay.co.za/...",
+    "country": "ZA",
+    "countryCode": "ZA",
+    "mirrorUrl": "https://ownzyou.com/zone/293608",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-03T22:01:31+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-3f2133c2311b",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "SLX",
+    "hackedUrl": "chotto.rest/...",
+    "country": "India",
+    "countryCode": "IN",
+    "mirrorUrl": "https://ownzyou.com/zone/293606",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-03T11:53:35+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-2f669a98c7ac",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "noticiasgamer.com/...",
+    "country": "Spain",
+    "countryCode": "ES",
+    "mirrorUrl": "https://ownzyou.com/zone/293605",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-03T06:35:02+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-2c14c5b79c23",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "www.residence-adrech.fr/...",
+    "country": "France",
+    "countryCode": "FR",
+    "mirrorUrl": "https://ownzyou.com/zone/293603",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-02T22:18:39+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-9d606a7d79ea",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "Hafyuros",
+    "hackedUrl": "venue2642.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293602",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-02T21:47:49+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-7c18f802b4db",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "Hafyuros",
+    "hackedUrl": "teamcerena.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293601",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-02T21:45:43+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-0655feb673bf",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "Hafyuros",
+    "hackedUrl": "silverfox50.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293600",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-02T21:43:06+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-af6a4b812b70",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "securitypluselectrical.com/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293599",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-02T21:24:12+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-3d26f6b943ab",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "vuwl8",
+    "hackedUrl": "pancanusantara.com/...",
+    "country": "Indonesia",
+    "countryCode": "ID",
+    "mirrorUrl": "https://ownzyou.com/zone/293598",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-02T17:09:04+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-679d3ffcfe84",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "amicalingua.lt/...",
+    "country": "LT",
+    "countryCode": "LT",
+    "mirrorUrl": "https://ownzyou.com/zone/293597",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-02T06:34:53+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-aef06b46d531",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "amicalingua1.lt/...",
+    "country": "LT",
+    "countryCode": "LT",
+    "mirrorUrl": "https://ownzyou.com/zone/293596",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-02T06:34:51+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-8a6204ee810a",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "fonobrunamedeiros.com.br/...",
+    "country": "Brazil",
+    "countryCode": "BR",
+    "mirrorUrl": "https://ownzyou.com/zone/293594",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-01T17:52:37+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-b8e85851d2a3",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "quran-gz.sa/...",
+    "country": "Germany",
+    "countryCode": "DE",
+    "mirrorUrl": "https://ownzyou.com/zone/293593",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-01T17:50:44+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-8b4407753e8f",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "vuwl8",
+    "hackedUrl": "dellride.com/...",
+    "country": "France",
+    "countryCode": "FR",
+    "mirrorUrl": "https://ownzyou.com/zone/293592",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-01T16:37:20+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-378d9bad9960",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "smartatlas.net/...",
+    "country": "United States",
+    "countryCode": "US",
+    "mirrorUrl": "https://ownzyou.com/zone/293591",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-01T15:51:29+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-07f8cf586344",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "waon-ami.com/...",
+    "country": "JP",
+    "countryCode": "JP",
+    "mirrorUrl": "https://ownzyou.com/zone/293590",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-01T15:26:59+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-e3d76f92618c",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "treehope.co.jp/...",
+    "country": "JP",
+    "countryCode": "JP",
+    "mirrorUrl": "https://ownzyou.com/zone/293589",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-01T15:26:54+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-ac8385be75de",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "tochigimoka-mobile.com/...",
+    "country": "JP",
+    "countryCode": "JP",
+    "mirrorUrl": "https://ownzyou.com/zone/293588",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-01T15:26:48+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-9dfc0f35bb57",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "shirakawa-mobile.com/...",
+    "country": "JP",
+    "countryCode": "JP",
+    "mirrorUrl": "https://ownzyou.com/zone/293587",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-01T15:26:42+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-96fa240b78dc",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "shinkamigoto-mobile.com/...",
+    "country": "JP",
+    "countryCode": "JP",
+    "mirrorUrl": "https://ownzyou.com/zone/293586",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-01T15:26:35+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
+    "id": "wg-28cbcad1ebf4",
+    "source": "OwnzYou",
+    "sourceUrl": "https://ownzyou.com/archive",
+    "thumbnailUrl": null,
+    "hackerName": "QATAR911",
+    "hackedUrl": "saitamakawagoe-mobile.com/...",
+    "country": "JP",
+    "countryCode": "JP",
+    "mirrorUrl": "https://ownzyou.com/zone/293585",
+    "mirrorAccessible": true,
+    "reportedAt": "2026-09-01T15:26:31+00:00",
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
+  },
+  {
     "id": "wg-eb77f33555dc",
     "source": "Defacer.Net",
     "sourceUrl": "https://defacer.net/archive/",
@@ -11,7 +571,7 @@
     "mirrorUrl": "https://defacer.net/view/62388/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-27T23:42:00+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-52dfcbda8c24",
@@ -25,7 +585,7 @@
     "mirrorUrl": "https://defacer.net/view/62387/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-27T23:41:57+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-9c31dc7e7214",
@@ -39,7 +599,7 @@
     "mirrorUrl": "https://defacer.net/view/62386/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-26T02:16:03+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-bacb4032ded6",
@@ -53,7 +613,7 @@
     "mirrorUrl": "https://defacer.net/view/62385/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-23T16:36:50+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-f11b71a87ed6",
@@ -67,7 +627,7 @@
     "mirrorUrl": "https://defacer.net/view/62384/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-23T04:08:47+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-3a5ab35315bb",
@@ -81,7 +641,7 @@
     "mirrorUrl": "https://defacer.net/view/62383/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:19:42+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-13d91de214e6",
@@ -95,7 +655,7 @@
     "mirrorUrl": "https://defacer.net/view/62382/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:18:34+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-dace0ab8d7b5",
@@ -109,7 +669,7 @@
     "mirrorUrl": "https://defacer.net/view/62381/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:18:31+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-aba77fe7aedc",
@@ -123,7 +683,7 @@
     "mirrorUrl": "https://defacer.net/view/62380/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:18:28+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-ceb611cdaf3b",
@@ -137,7 +697,7 @@
     "mirrorUrl": "https://defacer.net/view/62379/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:18:24+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-713316989ba0",
@@ -151,7 +711,7 @@
     "mirrorUrl": "https://defacer.net/view/62378/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:18:20+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-ec62757d8c2b",
@@ -165,7 +725,7 @@
     "mirrorUrl": "https://defacer.net/view/62377/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:15:29+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-63b898696694",
@@ -179,7 +739,7 @@
     "mirrorUrl": "https://defacer.net/view/62376/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:15:26+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-dc1940b3bc89",
@@ -193,7 +753,7 @@
     "mirrorUrl": "https://defacer.net/view/62375/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:15:23+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-bf5f64b7fb14",
@@ -207,7 +767,7 @@
     "mirrorUrl": "https://defacer.net/view/62374/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:14:32+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-18f9cd9f2549",
@@ -221,7 +781,7 @@
     "mirrorUrl": "https://defacer.net/view/62373/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:14:29+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-888c476a2c11",
@@ -235,7 +795,7 @@
     "mirrorUrl": "https://defacer.net/view/62372/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:14:26+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-5c8fb8f0386c",
@@ -249,7 +809,7 @@
     "mirrorUrl": "https://defacer.net/view/62371/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-20T18:13:20+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-f19b28063832",
@@ -263,7 +823,7 @@
     "mirrorUrl": "https://defacer.net/view/62370/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-19T18:50:36+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-0a0e94fa6b99",
@@ -277,7 +837,7 @@
     "mirrorUrl": "https://defacer.net/view/62369/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-18T06:22:38+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-3734eab7ff21",
@@ -291,7 +851,7 @@
     "mirrorUrl": "https://defacer.net/view/62368/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-18T06:22:35+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-f1287ffe158b",
@@ -305,7 +865,7 @@
     "mirrorUrl": "https://defacer.net/view/62367/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-18T06:21:31+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-36d14996a9b2",
@@ -319,7 +879,7 @@
     "mirrorUrl": "https://defacer.net/view/62366/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-18T06:21:28+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-1b2af71d362b",
@@ -333,7 +893,7 @@
     "mirrorUrl": "https://defacer.net/view/62365/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-18T06:21:24+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-2de047d24943",
@@ -347,7 +907,7 @@
     "mirrorUrl": "https://defacer.net/view/62364/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-18T06:20:33+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-d0bb21009965",
@@ -361,7 +921,7 @@
     "mirrorUrl": "https://defacer.net/view/62363/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-18T06:20:29+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-2b746f80ec3f",
@@ -375,7 +935,7 @@
     "mirrorUrl": "https://defacer.net/view/62362/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-18T06:20:26+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-8568f6e26717",
@@ -389,7 +949,7 @@
     "mirrorUrl": "https://defacer.net/view/62361/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-18T06:17:43+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-4b98734c31a7",
@@ -403,7 +963,7 @@
     "mirrorUrl": "https://defacer.net/view/62360/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-18T06:17:39+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   },
   {
     "id": "wg-7129f7694481",
@@ -417,566 +977,6 @@
     "mirrorUrl": "https://defacer.net/view/62359/",
     "mirrorAccessible": true,
     "reportedAt": "2026-08-18T06:17:35+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-cd857af49b8c",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "TurkHackTeam",
-    "hackedUrl": "185.205.239.15/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292238",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-18T08:54:25+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-cfd126bef96a",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "Hafyuros",
-    "hackedUrl": "20.216.135.132/...",
-    "country": "France",
-    "countryCode": "FR",
-    "mirrorUrl": "https://ownzyou.com/zone/292235",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-18T08:15:03+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-b47f4c075b85",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "Hafyuros",
-    "hackedUrl": "dgcapps.in/...",
-    "country": "JP",
-    "countryCode": "JP",
-    "mirrorUrl": "https://ownzyou.com/zone/292234",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-18T08:13:30+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-91f5da3a54f1",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "Hafyuros",
-    "hackedUrl": "2ndlifemoda.pt/...",
-    "country": "France",
-    "countryCode": "FR",
-    "mirrorUrl": "https://ownzyou.com/zone/292233",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-18T08:10:43+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-d9bb08815d69",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "TurkHackTeam",
-    "hackedUrl": "164.115.40.153/...",
-    "country": "TH",
-    "countryCode": "TH",
-    "mirrorUrl": "https://ownzyou.com/zone/292231",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-18T07:52:57+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-074b9f04c000",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "TurkHackTeam",
-    "hackedUrl": "89.111.146.82/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292227",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-18T07:52:53+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-bcfde141b4a4",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "TurkHackTeam",
-    "hackedUrl": "lawmix.co.il/...",
-    "country": "IL",
-    "countryCode": "IL",
-    "mirrorUrl": "https://ownzyou.com/zone/292225",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-18T07:52:51+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-9b90baae1235",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "TurkHackTeam",
-    "hackedUrl": "istartup.hk/...",
-    "country": "CA",
-    "countryCode": "CA",
-    "mirrorUrl": "https://ownzyou.com/zone/292224",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-18T07:52:49+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-ecc4a6d12923",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "TurkHackTeam",
-    "hackedUrl": "gnoristetinellada.gr/...",
-    "country": "CA",
-    "countryCode": "CA",
-    "mirrorUrl": "https://ownzyou.com/zone/292223",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-18T07:52:47+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-467d36eaf5dc",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "znettecnologia.com.br/...",
-    "country": "Brazil",
-    "countryCode": "BR",
-    "mirrorUrl": "https://ownzyou.com/zone/292222",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:02:00+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-163c9491ac27",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "forest-arh.ru/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292221",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:58+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-8618ceaa113a",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "tortuga-fish.ru/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292220",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:55+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-b5a276a92de0",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "www.otzovik-faberlic.ru/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292219",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:51+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-385e7b2b3dc9",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "www.xn--80atbkdchj.xn--p1ai/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292218",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:49+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-de96cd364c82",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "www.siding-montazh.ru/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292217",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:47+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-2b2e4ca674bf",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "leadership.loyalworks.de/...",
-    "country": "Germany",
-    "countryCode": "DE",
-    "mirrorUrl": "https://ownzyou.com/zone/292216",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:45+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-3a08b0b3843c",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "xn--80atbkdchj.xn--p1ai/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292215",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:44+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-2c4004fbb52e",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "www.cyberresilienza.it/...",
-    "country": "IT",
-    "countryCode": "IT",
-    "mirrorUrl": "https://ownzyou.com/zone/292214",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:42+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-d2448f610f5e",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "center-active.ru/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292213",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:39+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-c6e1f9e9af0c",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "www.ankieta.wodociagi-koscian.pl/...",
-    "country": "PL",
-    "countryCode": "PL",
-    "mirrorUrl": "https://ownzyou.com/zone/292212",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:37+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-d07c852c57af",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "artancenter.com/...",
-    "country": "Finland",
-    "countryCode": "FI",
-    "mirrorUrl": "https://ownzyou.com/zone/292210",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:33+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-7d88418033f4",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "www.klinker-econom.by/...",
-    "country": "BY",
-    "countryCode": "BY",
-    "mirrorUrl": "https://ownzyou.com/zone/292209",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:31+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-3d38ed27eb2c",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "klinker-econom.by/...",
-    "country": "BY",
-    "countryCode": "BY",
-    "mirrorUrl": "https://ownzyou.com/zone/292208",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:29+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-417a48971443",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "siding-montazh.ru/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292207",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:27+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-b35b2fb27a9a",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "migmebel.ru/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292206",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:25+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-1a319306e570",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "potenziale.loyalworks.de/...",
-    "country": "Germany",
-    "countryCode": "DE",
-    "mirrorUrl": "https://ownzyou.com/zone/292205",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:23+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-b88caf742b1d",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "www.sb-design-contentde.sbdesigncontent.com/...",
-    "country": "Germany",
-    "countryCode": "DE",
-    "mirrorUrl": "https://ownzyou.com/zone/292204",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:22+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-b68881225cce",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "arbitrsmr.ru/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292203",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:19+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-b8608db3ec8f",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "www.sbdesigncontent.com/...",
-    "country": "Germany",
-    "countryCode": "DE",
-    "mirrorUrl": "https://ownzyou.com/zone/292202",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:17+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-3796fcf02173",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "sbdesigncontent.com/...",
-    "country": "Germany",
-    "countryCode": "DE",
-    "mirrorUrl": "https://ownzyou.com/zone/292201",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:16+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-33161adcb641",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "sb-design-content.de/...",
-    "country": "Germany",
-    "countryCode": "DE",
-    "mirrorUrl": "https://ownzyou.com/zone/292200",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:16+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-e5352e1b3ed0",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "sb-design-contentde.sbdesigncontent.com/...",
-    "country": "Germany",
-    "countryCode": "DE",
-    "mirrorUrl": "https://ownzyou.com/zone/292199",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:14+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-f2b17f86fa6c",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "www.sb-design-content.de/...",
-    "country": "Germany",
-    "countryCode": "DE",
-    "mirrorUrl": "https://ownzyou.com/zone/292198",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:12+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-66d051900bc3",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "www.ricoloco.es/...",
-    "country": "Germany",
-    "countryCode": "DE",
-    "mirrorUrl": "https://ownzyou.com/zone/292197",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:10+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-55d7998b3ddd",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "spec-house.ru/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292196",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:09+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-a5179d0178b1",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "www.spec-house.ru/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292195",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:06+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-a166d2b4db1d",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "drbulyovszky.hu/...",
-    "country": "HU",
-    "countryCode": "HU",
-    "mirrorUrl": "https://ownzyou.com/zone/292194",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:04+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-5ce93e6c5c70",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "neon-cooperation.org/...",
-    "country": "CZ",
-    "countryCode": "CZ",
-    "mirrorUrl": "https://ownzyou.com/zone/292193",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:02+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-ca0cda682e1d",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "sicilia.fibradedicataaziende.it/...",
-    "country": "Germany",
-    "countryCode": "DE",
-    "mirrorUrl": "https://ownzyou.com/zone/292192",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:01+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
-  },
-  {
-    "id": "wg-4f4ea1541954",
-    "source": "OwnzYou",
-    "sourceUrl": "https://ownzyou.com/archive",
-    "thumbnailUrl": null,
-    "hackerName": "middle",
-    "hackedUrl": "tansau.ru/...",
-    "country": "Russia",
-    "countryCode": "RU",
-    "mirrorUrl": "https://ownzyou.com/zone/292191",
-    "mirrorAccessible": true,
-    "reportedAt": "2026-07-17T19:01:00+00:00",
-    "fetchedAt": "2026-09-05T07:38:20+00:00"
+    "fetchedAt": "2026-09-06T07:52:19+00:00"
   }
 ]

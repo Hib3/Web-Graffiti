@@ -44,9 +44,11 @@ function App() {
         const [response, statusResponse] = await Promise.all([
           fetch(`${import.meta.env.BASE_URL}data/records.json`, {
             signal: controller.signal,
+            cache: "no-cache",
           }),
           fetch(`${import.meta.env.BASE_URL}data/source-status.json`, {
             signal: controller.signal,
+            cache: "no-cache",
           }),
         ]);
 

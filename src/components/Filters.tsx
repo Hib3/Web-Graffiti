@@ -23,6 +23,7 @@ export function Filters({
           aria-label="Filter by country"
         >
           <option value="">All countries</option>
+          <option value="japan-related">日本関連 (JP / .jp)</option>
           {countries.map((country) => (
             <option key={country} value={country}>
               {country}

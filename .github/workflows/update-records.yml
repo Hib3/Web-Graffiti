@@ -3,7 +3,11 @@ name: Update Records
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 3 * * *"
+    - cron: "17 */6 * * *"
+
+concurrency:
+  group: update-records
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -13,6 +17,7 @@ permissions:
 jobs:
   update-records:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,13 +46,15 @@ jobs:
           ZONEH_DELAY_SECONDS: "2"
           DEFACERNET_MAX_PAGES: "1"
           DEFACERNET_DELAY_SECONDS: "2"
-          WEB_GRAFFITI_RECORD_LIMIT: "100"
+          WEB_GRAFFITI_RECORD_LIMIT: "5000"
           WEB_GRAFFITI_MIN_RECORDS: "20"
           WEB_GRAFFITI_MIN_SUCCESSFUL_SOURCES: "1"
         run: python scripts/generate_records.py
 
       - name: Check records
-        run: python scripts/check_records.py
+        run: |
+          python scripts/test_pipeline.py
+          python scripts/check_records.py
 
       - name: Build frontend
         run: |

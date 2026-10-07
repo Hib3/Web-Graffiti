@@ -30,6 +30,7 @@ class SourceAdapter(ABC):
     env_prefix: str
 
     def __init__(self) -> None:
+        self.warnings: list[str] = []
         self.session = requests.Session()
         self.session.headers.update(
             {
@@ -47,7 +48,9 @@ class SourceAdapter(ABC):
         )
 
     def get_soup(self, url: str, timeout_seconds: float) -> BeautifulSoup:
-        response = self.session.get(url, timeout=timeout_seconds)
+        response = self.session.get(url, timeout=timeout_seconds, allow_redirects=False)
+        if 300 <= response.status_code < 400:
+            raise RuntimeError(f"{self.name}: unexpected redirect; not followed")
         response.raise_for_status()
         return BeautifulSoup(response.text, "lxml")
 

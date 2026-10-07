@@ -20,6 +20,7 @@ COUNTRY_NAMES = {
     "ID": "Indonesia",
     "IE": "Ireland",
     "IN": "India",
+    "JP": "Japan",
     "NL": "Netherlands",
     "RU": "Russia",
     "SE": "Sweden",
@@ -73,7 +74,10 @@ def normalize_record(raw: dict[str, Any], fetched_at: str) -> dict[str, Any] | N
     hacker_name = normalize_space(raw.get("hackerName")) or "Unknown"
     country_code = normalize_space(raw.get("countryCode")).upper() or None
 
-    if not source or not mirror_url or not hacked_url_raw:
+    parsed_mirror = urlparse(mirror_url)
+    if (not source or not hacked_url_raw or not (raw.get("mirrorUrl") or raw.get("mirrorHref"))
+            or parsed_mirror.scheme not in {"https", "http"}
+            or parsed_mirror.netloc != urlparse(raw.get("sourceBaseUrl", "")).netloc):
         return None
 
     return {

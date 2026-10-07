@@ -17,7 +17,8 @@ export function filterRecords(
       return false;
     }
 
-    if (filters.country && record.country !== filters.country) {
+    const japanRelated = record.countryCode === "JP" || record.hackedUrl.split("/")[0].endsWith(".jp");
+    if (filters.country === "japan-related" ? !japanRelated : filters.country && record.country !== filters.country) {
       return false;
     }
 
@@ -29,6 +30,8 @@ export function filterRecords(
       record.hackerName,
       record.hackedUrl,
       record.country ?? "",
+      record.countryCode ?? "",
+      japanRelated ? "日本 Japan" : "",
       record.source,
     ]
       .join(" ")

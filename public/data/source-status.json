@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-06T10:13:52+00:00",
-  "totalRecords": 70,
+  "generatedAt": "2026-10-07T09:17:43+00:00",
+  "totalRecords": 119,
   "successfulSources": 2,
   "sources": [
     {
@@ -8,28 +8,34 @@
       "ok": true,
       "recordCount": 40,
       "error": null,
-      "fetchedAt": "2026-10-06T10:13:52+00:00"
+      "fetchedAt": "2026-10-07T09:17:43+00:00",
+      "warnings": [],
+      "latestReportedAt": "2026-09-05T19:41:23+00:00"
     },
     {
       "source": "Zone-Xsec",
       "ok": false,
       "recordCount": 0,
       "error": "403 Client Error: Forbidden for url: https://zone-xsec.com/archive",
-      "fetchedAt": "2026-10-06T10:13:52+00:00"
+      "fetchedAt": "2026-10-07T09:17:43+00:00"
     },
     {
       "source": "Zone-H",
       "ok": false,
       "recordCount": 0,
       "error": "Zone-H: JavaScript challenge encountered",
-      "fetchedAt": "2026-10-06T10:13:52+00:00"
+      "fetchedAt": "2026-10-07T09:17:43+00:00"
     },
     {
       "source": "Defacer.Net",
       "ok": true,
-      "recordCount": 30,
+      "recordCount": 60,
       "error": null,
-      "fetchedAt": "2026-10-06T10:13:52+00:00"
+      "fetchedAt": "2026-10-07T09:17:43+00:00",
+      "warnings": [],
+      "latestReportedAt": "2026-09-29T19:10:40+00:00"
     }
-  ]
+  ],
+  "newRecords": 49,
+  "latestReportedAt": "2026-09-29T19:10:40+00:00"
 }

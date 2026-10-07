@@ -21,9 +21,17 @@ class OwnzYouAdapter(SourceAdapter):
         settings = self.settings()
         output: list[dict[str, Any]] = []
 
-        for page in range(1, settings.max_pages + 1):
+        urls = [self.page_url(page) for page in range(1, settings.max_pages + 1)]
+        urls.append(urljoin(self.base_url, "archive.php?per=20&q=.jp"))
+        for page, url in enumerate(urls, 1):
             self.wait_between_pages(page, settings.delay_seconds)
-            soup = self.get_soup(self.page_url(page), settings.timeout_seconds)
+            try:
+                soup = self.get_soup(url, settings.timeout_seconds)
+            except Exception as exc:
+                if output:
+                    self.warnings.append(f"Additional listing failed: {exc}")
+                    continue
+                raise
             rows = soup.select("table.archive-table tbody tr")
             if not rows:
                 raise RuntimeError(f"{self.name}: no archive rows found on page {page}")
@@ -45,7 +53,7 @@ class OwnzYouAdapter(SourceAdapter):
                     {
                         "source": self.name,
                         "sourceBaseUrl": self.base_url,
-                        "sourceUrl": self.source_url,
+                        "sourceUrl": url,
                         "thumbnailUrl": None,
                         "hackerName": attacker.get_text(" ", strip=True).replace("Verified", "").strip(),
                         "hackedUrl": hacked_url,

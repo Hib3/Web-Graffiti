@@ -6,18 +6,21 @@ import type { DefacementRecord } from "./types/record";
 import { filterRecords } from "./utils/filter";
 import { getCountries } from "./utils/filter";
 import { sortByReportedAtDesc } from "./utils/sort";
+import { formatLocalDate } from "./utils/date";
 
 type LoadState = "idle" | "loading" | "ready" | "error";
 type SourceStatus = {
   generatedAt: string;
   totalRecords: number;
   successfulSources: number;
+  latestReportedAt?: string | null;
   sources: Array<{
     source: string;
     ok: boolean;
     recordCount: number;
     error: string | null;
     fetchedAt: string;
+    warnings?: string[];
   }>;
 };
 
@@ -109,12 +112,21 @@ function App() {
         <section className="source-status" aria-label="Source status">
           <strong>{sourceStatus.totalRecords} records</strong>
           <span>{sourceStatus.successfulSources} active sources</span>
+          <span>Last collection: {formatLocalDate(sourceStatus.generatedAt)}</span>
+          {sourceStatus.latestReportedAt && <span>Latest report: {formatLocalDate(sourceStatus.latestReportedAt)}</span>}
           {sourceStatus.sources.map((source) => (
-            <span key={source.source} className={source.ok ? "ok" : "warn"}>
-              {source.source}: {source.ok ? source.recordCount : "unavailable"}
+            <span key={source.source} className={source.ok && !source.warnings?.length ? "ok" : "warn"} title={source.error || source.warnings?.join("; ")}>
+              {source.source}: {source.ok ? `${source.recordCount}${source.warnings?.length ? " (partial)" : ""}` : "unavailable"}
             </span>
           ))}
         </section>
+      )}
+
+      {sourceStatus && Date.now() - Date.parse(sourceStatus.generatedAt) > 12 * 3600_000 && (
+        <p role="status">収集の更新が12時間以上ありません。掲載情報は最新でない可能性があります。</p>
+      )}
+      {sourceStatus?.latestReportedAt && Date.now() - Date.parse(sourceStatus.latestReportedAt) > 7 * 86400_000 && (
+        <p role="status">取得範囲の最新記録は7日以上前です。新たな攻撃がないことを意味しません。</p>
       )}
 
       {loadState === "loading" && (

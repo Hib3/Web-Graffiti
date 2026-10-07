@@ -54,6 +54,10 @@ def generate_records() -> tuple[list[dict], dict]:
     for adapter in adapters:
         try:
             raw_records = adapter.fetch()
+            normalized = [normalize_record(record, fetched_at) for record in raw_records]
+            valid = dedupe_records([record for record in normalized if record is not None])
+            if not valid:
+                raise RuntimeError("No valid archive records parsed")
         except Exception as exc:
             print(f"[source-error] {adapter.name}: {exc}", file=sys.stderr)
             sources.append(
@@ -67,8 +71,6 @@ def generate_records() -> tuple[list[dict], dict]:
             )
             continue
 
-        normalized = [normalize_record(record, fetched_at) for record in raw_records]
-        valid = [record for record in normalized if record is not None]
         print(f"[source-ok] {adapter.name}: {len(valid)} records", file=sys.stderr)
         sources.append(
             {
@@ -77,6 +79,8 @@ def generate_records() -> tuple[list[dict], dict]:
                 "recordCount": len(valid),
                 "error": None,
                 "fetchedAt": fetched_at,
+                "warnings": adapter.warnings,
+                "latestReportedAt": max((r["reportedAt"] or "" for r in valid), default="") or None,
             }
         )
         records.extend(valid)
@@ -97,21 +101,27 @@ def main() -> int:
         records, status = generate_records()
     except Exception as exc:
         print(f"Failed to generate records; keeping previous records.json: {exc}", file=sys.stderr)
-        return 1 if not previous else 0
+        return 1
 
     if not records:
         print("No records generated; keeping previous records.json", file=sys.stderr)
-        return 1 if not previous else 0
+        return 1
 
-    limit = int(os.environ.get("WEB_GRAFFITI_RECORD_LIMIT", "100"))
+    limit = int(os.environ.get("WEB_GRAFFITI_RECORD_LIMIT", "5000"))
     min_records = int(os.environ.get("WEB_GRAFFITI_MIN_RECORDS", "20"))
     min_sources = int(os.environ.get("WEB_GRAFFITI_MIN_SUCCESSFUL_SOURCES", "1"))
-    limited_records = records[:limit]
+    # Fresh observations replace duplicates; retained records keep their original fetchedAt.
+    limited_records = sort_records(dedupe_records(records + previous))[:limit]
+    for record in limited_records:
+        if record.get("countryCode") == "JP":
+            record["country"] = "Japan"
+    status["newRecords"] = len({r["id"] for r in records} - {r["id"] for r in previous})
+    status["latestReportedAt"] = max((r["reportedAt"] or "" for r in records), default="") or None
     status["totalRecords"] = len(limited_records)
 
-    if len(limited_records) < min_records:
+    if len(records) < min_records:
         print(
-            f"Only {len(limited_records)} records generated; minimum is {min_records}. Keeping previous records.json",
+            f"Only {len(records)} fresh records generated; minimum is {min_records}. Keeping previous records.json",
             file=sys.stderr,
         )
         return 1

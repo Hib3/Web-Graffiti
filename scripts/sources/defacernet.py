@@ -20,9 +20,17 @@ class DefacerNetAdapter(SourceAdapter):
         settings = self.settings()
         output: list[dict[str, Any]] = []
 
-        for page in range(1, settings.max_pages + 1):
+        urls = [self.page_url(page) for page in range(1, settings.max_pages + 1)]
+        urls.append(f"{self.base_url}search/?query=.jp")
+        for page, url in enumerate(urls, 1):
             self.wait_between_pages(page, settings.delay_seconds)
-            soup = self.get_soup(self.page_url(page), settings.timeout_seconds)
+            try:
+                soup = self.get_soup(url, settings.timeout_seconds)
+            except Exception as exc:
+                if output:
+                    self.warnings.append(f"Additional listing failed: {exc}")
+                    continue
+                raise
             tables = soup.find_all("table")
             archive_table = next((table for table in tables if "Date & Time" in table.get_text(" ", strip=True)), None)
             if archive_table is None:
@@ -54,7 +62,7 @@ class DefacerNetAdapter(SourceAdapter):
                     {
                         "source": self.name,
                         "sourceBaseUrl": self.base_url,
-                        "sourceUrl": self.source_url,
+                        "sourceUrl": url,
                         "thumbnailUrl": None,
                         "hackerName": attacker.get_text(" ", strip=True),
                         "hackedUrl": hacked_url,

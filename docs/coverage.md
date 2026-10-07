@@ -15,8 +15,8 @@ Fresh records merge with the previous dataset, deduplicated by source and mirror
 
 ## Blocked-source alternatives
 
-1. Ordinary browser rendering could handle a JavaScript-only interstitial, but automated access and parsing have not been verified for Zone-H. It must not be reported as restored.
-2. A documented API/feed or an operator-approved export would be more stable than parsing challenge pages. Availability for Zone-H and Zone-Xsec remains unknown. No proxy rotation, copied authentication cookies, or CAPTCHA-solving service has been added.
+1. Ordinary browser rendering was tested for Zone-H. It passes the initial JavaScript interstitial, then encounters a CAPTCHA. The page directs frequent data collectors to its operator contact route. The source is not restored.
+2. Zone-H's https://www.zone-h.org/feeds page still advertises a defacement RSS feed. A direct request to https://www.zone-h.org/rss/defacements returns HTTP 200 and a text notice that the feed was removed due to abuse, not XML records. It is not a working alternative. An operator-approved export/API remains an option, with availability unknown. No proxy rotation, copied authentication cookies, or CAPTCHA-solving service has been added.
 3. The verified OwnzYou and Defacer.Net search routes provide additional Japan-related records now; they do not reproduce the missing archives' coverage.
 
 ## Broader Japanese security information

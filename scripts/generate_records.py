@@ -10,6 +10,7 @@ from sources.defacernet import DefacerNetAdapter
 from sources.ownzyou import OwnzYouAdapter
 from sources.zoneh import ZoneHAdapter
 from sources.zonexsec import ZoneXsecAdapter
+from sources.hackmirror import HackMirrorAdapter
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,6 +47,7 @@ def generate_records() -> tuple[list[dict], dict]:
         ZoneXsecAdapter(),
         ZoneHAdapter(),
         DefacerNetAdapter(),
+        HackMirrorAdapter(),
     ]
     fetched_at = now_iso()
     records: list[dict] = []

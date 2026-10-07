@@ -4,6 +4,7 @@ export type RecordFilters = {
   query: string;
   country: string;
   mirrorAccessibleOnly: boolean;
+  source?: string;
 };
 
 export function filterRecords(
@@ -13,6 +14,7 @@ export function filterRecords(
   const query = filters.query.trim().toLowerCase();
 
   return records.filter((record) => {
+    if (filters.source && record.source !== filters.source) return false;
     if (filters.mirrorAccessibleOnly && !record.mirrorAccessible) {
       return false;
     }

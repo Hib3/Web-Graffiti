@@ -55,7 +55,7 @@ select {
 
 .toolbar {
   display: grid;
-  grid-template-columns: minmax(240px, 1fr) auto;
+  grid-template-columns: minmax(240px, 1fr) minmax(0, 1fr);
   gap: 16px;
   align-items: end;
   padding: 24px 0;
@@ -85,6 +85,12 @@ select {
   gap: 14px;
   align-items: end;
   flex-wrap: wrap;
+}
+
+.result-count {
+  color: #47524b;
+  font-size: 0.9rem;
+  margin: 18px 0 12px;
 }
 
 .source-status {

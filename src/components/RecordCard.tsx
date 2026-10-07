@@ -12,11 +12,11 @@ export function RecordCard({ record }: RecordCardProps) {
         {record.thumbnailUrl ? (
           <img
             src={`${import.meta.env.BASE_URL}${record.thumbnailUrl.replace(/^\//, "")}`}
-            alt={`Mirror thumbnail for ${record.hackerName}`}
+            alt={`Sanitized mirror thumbnail for ${record.hackerName}`}
             loading="lazy"
           />
         ) : (
-          <div className="thumb-placeholder">Thumbnail required</div>
+          <div className="thumb-placeholder">No archived thumbnail</div>
         )}
       </div>
 

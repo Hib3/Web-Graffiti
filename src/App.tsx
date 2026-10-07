@@ -31,6 +31,7 @@ function App() {
   const [error, setError] = useState("");
   const [query, setQuery] = useState("");
   const [country, setCountry] = useState("");
+  const [source, setSource] = useState("");
   const [mirrorAccessibleOnly, setMirrorAccessibleOnly] = useState(false);
 
   useEffect(() => {
@@ -80,14 +81,16 @@ function App() {
   }, []);
 
   const countries = useMemo(() => getCountries(records), [records]);
+  const sources = useMemo(() => [...new Set(records.map((record) => record.source))].sort(), [records]);
   const visibleRecords = useMemo(
     () =>
       filterRecords(records, {
         query,
         country,
+        source,
         mirrorAccessibleOnly,
       }),
-    [records, query, country, mirrorAccessibleOnly],
+    [records, query, country, source, mirrorAccessibleOnly],
   );
 
   return (
@@ -103,6 +106,9 @@ function App() {
         <SearchBar value={query} onChange={setQuery} />
         <Filters
           countries={countries}
+          sources={sources}
+          selectedSource={source}
+          onSourceChange={setSource}
           selectedCountry={country}
           mirrorAccessibleOnly={mirrorAccessibleOnly}
           onCountryChange={setCountry}
@@ -143,7 +149,12 @@ function App() {
         </section>
       )}
 
-      {loadState === "ready" && <RecordList records={visibleRecords} />}
+      {loadState === "ready" && <>
+        <p className="result-count" aria-live="polite">
+          {visibleRecords.length} records / {visibleRecords.filter((record) => record.thumbnailUrl).length} mirror thumbnails
+        </p>
+        <RecordList records={visibleRecords} />
+      </>}
     </main>
   );
 }

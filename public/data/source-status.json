@@ -1,37 +1,35 @@
 {
-  "generatedAt": "2026-10-09T13:27:22+00:00",
+  "generatedAt": "2026-10-09T22:42:24+00:00",
   "totalRecords": 131,
-  "successfulSources": 3,
+  "successfulSources": 2,
   "sources": [
     {
       "source": "OwnzYou",
-      "ok": true,
-      "recordCount": 59,
-      "error": null,
-      "fetchedAt": "2026-10-09T13:27:22+00:00",
-      "warnings": [],
-      "latestReportedAt": "2026-09-05T19:41:23+00:00"
+      "ok": false,
+      "recordCount": 0,
+      "error": "521 Server Error: <none> for url: https://ownzyou.com/archive",
+      "fetchedAt": "2026-10-09T22:42:24+00:00"
     },
     {
       "source": "Zone-Xsec",
       "ok": false,
       "recordCount": 0,
       "error": "403 Client Error: Forbidden for url: https://zone-xsec.com/archive",
-      "fetchedAt": "2026-10-09T13:27:22+00:00"
+      "fetchedAt": "2026-10-09T22:42:24+00:00"
     },
     {
       "source": "Zone-H",
       "ok": false,
       "recordCount": 0,
       "error": "Zone-H: JavaScript challenge encountered",
-      "fetchedAt": "2026-10-09T13:27:22+00:00"
+      "fetchedAt": "2026-10-09T22:42:24+00:00"
     },
     {
       "source": "Defacer.Net",
       "ok": true,
       "recordCount": 60,
       "error": null,
-      "fetchedAt": "2026-10-09T13:27:22+00:00",
+      "fetchedAt": "2026-10-09T22:42:24+00:00",
       "warnings": [],
       "latestReportedAt": "2026-09-29T19:10:40+00:00"
     },
@@ -40,7 +38,7 @@
       "ok": true,
       "recordCount": 12,
       "error": null,
-      "fetchedAt": "2026-10-09T13:27:22+00:00",
+      "fetchedAt": "2026-10-09T22:42:24+00:00",
       "warnings": [],
       "latestReportedAt": "2026-06-10T00:37:14+00:00"
     }

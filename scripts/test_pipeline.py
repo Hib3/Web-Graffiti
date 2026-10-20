@@ -1,8 +1,12 @@
 """Offline regression checks: python scripts/test_pipeline.py."""
-from unittest.mock import patch
+import json
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from unittest.mock import Mock, patch
 from bs4 import BeautifulSoup
 from sources.hackmirror import HackMirrorAdapter
 from create_thumbnails import allowed, sanitize_snapshot
+import create_thumbnails as thumbnails
 from normalize import normalize_record, dedupe_records, sort_records
 import generate_records as pipeline
 
@@ -48,6 +52,28 @@ def main():
     assert len(parsed) == 1 and parsed[0]['countryCode'] == 'JP'
     assert parsed[0]['mirrorUrl'] == 'https://hack-mirror.com/mirror/example.html'
     assert normalize_record(parsed[0], 'now')['hackedUrl'] == 'example.jp/...'
+    # A failed mirror source must not block publishing healthy sources.
+    sample = [dict(id='wg-good', source='OwnzYou', mirrorAccessible=True,
+                   mirrorUrl='https://ownzyou.com/zone/1', thumbnailUrl=None, hackerName='ResearchName'),
+              dict(id='wg-down', source='Hack Mirror', mirrorAccessible=True,
+                   mirrorUrl='https://hack-mirror.com/mirror/test.html', thumbnailUrl=None)]
+    with TemporaryDirectory() as directory, \
+         patch.object(thumbnails, 'ROOT', Path(directory)), \
+         patch.object(thumbnails, 'RECORDS') as records_path, \
+         patch.object(thumbnails, 'write_json') as save, \
+         patch.object(thumbnails.time, 'sleep'), \
+         patch.object(thumbnails.requests, 'Session') as session, \
+         patch.object(thumbnails, 'sync_playwright'):
+        records_path.read_text.return_value = json.dumps(sample)
+        session.return_value.get.side_effect = [
+            Mock(status_code=200, text='<iframe src="/snapshot/1"></iframe>'),
+            Mock(status_code=200, content=b'<body>ResearchName</body>'),
+            thumbnails.requests.exceptions.ConnectTimeout('archive unavailable'),
+        ]
+        thumbnails.main()
+        saved = save.call_args.args[1]
+        assert saved[0]['mirrorAccessible'] and saved[0]['thumbnailUrl']
+        assert not saved[1]['mirrorAccessible'] and saved[1]['thumbnailUrl'] is None
     print("Pipeline regression checks passed")
 
 

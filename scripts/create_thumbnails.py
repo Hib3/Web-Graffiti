@@ -97,8 +97,6 @@ def main():
     for path in (ROOT / 'public/thumbnails').glob('wg-*.jpg'):
         if path.name not in used:
             path.unlink()
-    if not any(r['source'] == 'Hack Mirror' and r.get('thumbnailUrl') and r['mirrorAccessible'] for r in candidates):
-        raise RuntimeError("No new-source snapshots could be rendered; deployment stopped")
 
 
 if __name__ == "__main__":

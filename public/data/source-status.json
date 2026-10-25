@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T11:38:49+00:00",
+  "generatedAt": "2026-10-25T16:29:03+00:00",
   "totalRecords": 133,
   "successfulSources": 2,
   "sources": [
@@ -8,7 +8,7 @@
       "ok": true,
       "recordCount": 59,
       "error": null,
-      "fetchedAt": "2026-10-25T11:38:49+00:00",
+      "fetchedAt": "2026-10-25T16:29:03+00:00",
       "warnings": [],
       "latestReportedAt": "2026-09-05T19:41:23+00:00"
     },
@@ -17,28 +17,28 @@
       "ok": false,
       "recordCount": 0,
       "error": "403 Client Error: Forbidden for url: https://zone-xsec.com/archive",
-      "fetchedAt": "2026-10-25T11:38:49+00:00"
+      "fetchedAt": "2026-10-25T16:29:03+00:00"
     },
     {
       "source": "Zone-H",
       "ok": false,
       "recordCount": 0,
       "error": "Zone-H: JavaScript challenge encountered",
-      "fetchedAt": "2026-10-25T11:38:49+00:00"
+      "fetchedAt": "2026-10-25T16:29:03+00:00"
     },
     {
       "source": "Defacer.Net",
       "ok": false,
       "recordCount": 0,
       "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-      "fetchedAt": "2026-10-25T11:38:49+00:00"
+      "fetchedAt": "2026-10-25T16:29:03+00:00"
     },
     {
       "source": "Hack Mirror",
       "ok": true,
       "recordCount": 12,
       "error": null,
-      "fetchedAt": "2026-10-25T11:38:49+00:00",
+      "fetchedAt": "2026-10-25T16:29:03+00:00",
       "warnings": [],
       "latestReportedAt": "2026-06-10T00:37:14+00:00"
     }

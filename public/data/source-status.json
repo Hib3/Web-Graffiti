@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T06:41:41+00:00",
+  "generatedAt": "2026-11-15T18:54:58+00:00",
   "totalRecords": 175,
   "successfulSources": 3,
   "sources": [
@@ -8,7 +8,7 @@
       "ok": true,
       "recordCount": 59,
       "error": null,
-      "fetchedAt": "2026-11-15T06:41:41+00:00",
+      "fetchedAt": "2026-11-15T18:54:58+00:00",
       "warnings": [],
       "latestReportedAt": "2026-09-05T19:41:23+00:00"
     },
@@ -17,22 +17,24 @@
       "ok": false,
       "recordCount": 0,
       "error": "403 Client Error: Forbidden for url: https://zone-xsec.com/archive",
-      "fetchedAt": "2026-11-15T06:41:41+00:00"
+      "fetchedAt": "2026-11-15T18:54:58+00:00"
     },
     {
       "source": "Zone-H",
       "ok": false,
       "recordCount": 0,
       "error": "Zone-H: JavaScript challenge encountered",
-      "fetchedAt": "2026-11-15T06:41:41+00:00"
+      "fetchedAt": "2026-11-15T18:54:58+00:00"
     },
     {
       "source": "Defacer.Net",
       "ok": true,
-      "recordCount": 60,
+      "recordCount": 30,
       "error": null,
-      "fetchedAt": "2026-11-15T06:41:41+00:00",
-      "warnings": [],
+      "fetchedAt": "2026-11-15T18:54:58+00:00",
+      "warnings": [
+        "Additional listing failed: 500 Server Error: Internal Server Error for url: https://defacer.net/search/?query=.jp"
+      ],
       "latestReportedAt": "2026-11-02T03:07:31+00:00"
     },
     {
@@ -40,7 +42,7 @@
       "ok": true,
       "recordCount": 12,
       "error": null,
-      "fetchedAt": "2026-11-15T06:41:41+00:00",
+      "fetchedAt": "2026-11-15T18:54:58+00:00",
       "warnings": [],
       "latestReportedAt": "2026-11-12T23:07:24+00:00"
     }

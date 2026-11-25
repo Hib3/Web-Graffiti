@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T08:43:24+00:00",
+  "generatedAt": "2026-11-25T21:46:06+00:00",
   "totalRecords": 258,
   "successfulSources": 3,
   "sources": [
@@ -8,7 +8,7 @@
       "ok": true,
       "recordCount": 40,
       "error": null,
-      "fetchedAt": "2026-11-25T08:43:24+00:00",
+      "fetchedAt": "2026-11-25T21:46:06+00:00",
       "warnings": [],
       "latestReportedAt": "2026-11-20T22:59:20+00:00"
     },
@@ -17,31 +17,35 @@
       "ok": false,
       "recordCount": 0,
       "error": "403 Client Error: Forbidden for url: https://zone-xsec.com/archive",
-      "fetchedAt": "2026-11-25T08:43:24+00:00"
+      "fetchedAt": "2026-11-25T21:46:06+00:00"
     },
     {
       "source": "Zone-H",
       "ok": false,
       "recordCount": 0,
       "error": "Zone-H: JavaScript challenge encountered",
-      "fetchedAt": "2026-11-25T08:43:24+00:00"
+      "fetchedAt": "2026-11-25T21:46:06+00:00"
     },
     {
       "source": "Defacer.Net",
       "ok": true,
       "recordCount": 60,
       "error": null,
-      "fetchedAt": "2026-11-25T08:43:24+00:00",
+      "fetchedAt": "2026-11-25T21:46:06+00:00",
       "warnings": [],
       "latestReportedAt": "2026-11-19T17:08:01+00:00"
     },
     {
       "source": "Hack Mirror",
       "ok": true,
-      "recordCount": 12,
+      "recordCount": 9,
       "error": null,
-      "fetchedAt": "2026-11-25T08:43:24+00:00",
-      "warnings": [],
+      "fetchedAt": "2026-11-25T21:46:06+00:00",
+      "warnings": [
+        "Mirror detail failed: 508 Server Error: Loop Detected for url: https://hack-mirror.com/mirror/tatongjewelry.com.html",
+        "Mirror detail failed: 508 Server Error: Loop Detected for url: https://hack-mirror.com/mirror/thaispine.com.html",
+        "Mirror detail failed: 508 Server Error: Loop Detected for url: https://hack-mirror.com/mirror/suratit.com.html"
+      ],
       "latestReportedAt": "2026-11-12T23:07:24+00:00"
     }
   ],
